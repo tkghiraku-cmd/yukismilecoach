@@ -1401,7 +1401,7 @@ h3 {
 }
 
 .qa-item.open .answer {
-    max-height: 200px;
+    max-height: 360px;
     padding: 0 24px 20px;
 }
 
@@ -1464,6 +1464,103 @@ h3 {
     font-size: 0.78rem;
     color: var(--color-text-light);
     margin-top: 12px;
+}
+
+/* =============================================
+   ASSURANCE SECTION (1対1・守秘の約束)
+   ============================================= */
+.assurance {
+    background-color: var(--color-white);
+}
+
+.assurance-lead {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--color-text-main);
+    line-height: 2;
+    max-width: 760px;
+    margin: calc(-1 * var(--spacing-md)) auto var(--spacing-md);
+    font-weight: 600;
+}
+
+.assurance-lead strong {
+    color: var(--color-cta-start);
+    font-weight: 700;
+}
+
+.assurance-grid {
+    display: grid;
+    gap: 24px;
+}
+
+@media (min-width: 768px) {
+    .assurance-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.assurance-card {
+    background: linear-gradient(180deg, var(--color-warm-beige) 0%, var(--color-white) 100%);
+    border: 1px solid rgba(192, 155, 102, 0.25);
+    border-radius: var(--border-radius);
+    padding: 36px 28px;
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.assurance-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card);
+}
+
+.assurance-icon {
+    width: 66px;
+    height: 66px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9rem;
+    background: var(--color-white);
+    border-radius: 50%;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(192, 155, 102, 0.2);
+}
+
+.assurance-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 14px;
+    color: var(--color-heading);
+    font-weight: 700;
+}
+
+.assurance-card p {
+    font-size: 1.0rem;
+    color: var(--color-text-light);
+    line-height: 1.95;
+    text-align: left;
+}
+
+.assurance-note {
+    text-align: center;
+    margin-top: var(--spacing-md);
+    font-size: 0.92rem;
+    color: var(--color-text-light);
+}
+
+@media (min-width: 768px) {
+    .assurance-lead {
+        font-size: 1.3rem;
+    }
+
+    .assurance-card h3 {
+        font-size: 1.45rem;
+    }
+
+    .assurance-card p {
+        font-size: 1.15rem;
+    }
 }
 
 /* =============================================
