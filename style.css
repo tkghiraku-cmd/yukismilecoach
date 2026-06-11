@@ -774,6 +774,148 @@ h3 {
 }
 
 /* =============================================
+   PROGRAM (ワークプログラム内容)
+   ============================================= */
+.program-lead {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto var(--spacing-lg);
+    font-size: 1.1rem;
+    line-height: 2;
+    color: var(--color-text-main);
+}
+
+.program-lead strong {
+    color: var(--color-cta-end);
+    font-weight: 700;
+}
+
+.program-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    align-items: stretch;
+}
+
+.program-card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 36px 32px;
+    border: 1px solid rgba(192, 155, 102, 0.18);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-card);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.program-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-elevated);
+    border-color: rgba(217, 138, 122, 0.4);
+}
+
+.program-head {
+    border-bottom: 1px dashed rgba(192, 155, 102, 0.35);
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+}
+
+.program-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 5px 16px;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: white;
+    background: linear-gradient(135deg, var(--color-cta-start), var(--color-gold));
+    border-radius: 999px;
+}
+
+.program-title {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--color-heading);
+}
+
+.program-sub {
+    display: block;
+    margin-top: 8px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-text-light);
+}
+
+.program-desc {
+    font-size: 1.02rem;
+    line-height: 2;
+    color: var(--color-text-light);
+    margin-bottom: 22px;
+}
+
+.program-desc strong {
+    color: var(--color-text-main);
+    font-weight: 700;
+}
+
+.program-points {
+    list-style: none;
+    padding: 0;
+    margin: auto 0 0;
+}
+
+.program-points li {
+    position: relative;
+    padding: 8px 0 8px 4px;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text-main);
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.program-points li .check-icon {
+    color: var(--color-cta-start);
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.program-hook {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+}
+
+.program-hook p {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.7;
+    color: var(--color-heading);
+    margin-bottom: 28px;
+}
+
+@media (max-width: 768px) {
+    .program-list {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .program-card {
+        padding: 30px 22px;
+    }
+
+    .program-title {
+        font-size: 1.2rem;
+    }
+
+    .program-hook p {
+        font-size: 1.2rem;
+    }
+}
+
+/* =============================================
    CUSTOMER VOICES (Before/After)
    ============================================= */
 .voices {
