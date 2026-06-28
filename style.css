@@ -82,6 +82,12 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+p,
+li,
+dd {
+    hanging-punctuation: allow-end;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -408,6 +414,29 @@ h3 {
     font-weight: 700;
     line-height: 1.7;
     letter-spacing: 0.02em;
+}
+
+.hero-benefit,
+.message-text,
+.message-sub,
+.profile-catch,
+.story-list dd,
+.benefit-card p,
+.program-lead,
+.program-desc,
+.program-points li,
+.voice-before p,
+.voice-after p,
+.step-desc,
+.flow-notes p,
+.assurance-lead,
+.assurance-card p,
+.offer-subtitle,
+.offer-note,
+.a-text,
+.contact-copy,
+.contact-reassure {
+    text-wrap: pretty;
 }
 
 .hero-image {
@@ -1952,16 +1981,62 @@ h3 {
 
     /* セクションの余白を引き締めて読みやすく */
     .section-padding {
-        padding: 56px 0;
+        padding: 48px 0;
     }
 
     .section-title {
-        margin-bottom: 48px;
+        margin-bottom: 34px;
+        padding-bottom: 20px;
+        font-size: 1.45rem;
+        line-height: 1.55;
+        letter-spacing: 0.03em;
+    }
+
+    body {
+        font-size: 16px;
+        line-height: 1.82;
+        letter-spacing: 0.02em;
+    }
+
+    .container {
+        width: min(91%, 420px);
+    }
+
+    .hero {
+        margin-top: 58px;
+        min-height: auto;
+    }
+
+    .hero-content {
+        padding: 32px 18px 24px;
+    }
+
+    .hero-suby {
+        font-size: 0.88rem;
+        line-height: 1.6;
+        margin-bottom: 8px;
+    }
+
+    .hero-title {
+        font-size: 1.72rem;
+        line-height: 1.5;
+        letter-spacing: 0.025em;
+        margin: 14px 0 18px;
+    }
+
+    .hero-benefit {
+        max-width: 23em;
+        margin: 0 auto 22px;
+        font-size: 0.95rem;
+        line-height: 1.88;
+        font-weight: 500;
+        letter-spacing: 0.015em;
     }
 
     /* ヒーローのバッジを2列で均等に揃える */
     .hero-badges {
         gap: 10px;
+        margin-bottom: 22px;
     }
 
     .hero-badge {
@@ -1969,6 +2044,260 @@ h3 {
         justify-content: center;
         padding: 10px 8px;
         font-size: 0.85rem;
+    }
+
+    .hero-image {
+        max-height: 260px;
+    }
+
+    .empathy-gallery {
+        gap: 24px;
+        margin-bottom: 34px;
+    }
+
+    .speech-bubble {
+        width: 100%;
+        padding: 14px 18px;
+        font-size: 1rem;
+        line-height: 1.55;
+        letter-spacing: 0.02em;
+    }
+
+    .checklist-container {
+        padding: 22px 18px !important;
+        margin-bottom: 32px !important;
+    }
+
+    .checklist li {
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+        font-size: 0.96rem;
+        line-height: 1.7;
+        letter-spacing: 0.015em;
+    }
+
+    .check-icon {
+        margin-right: 0;
+        line-height: 1.5;
+        font-size: 1.05rem;
+    }
+
+    .message-box {
+        margin-top: 34px;
+        text-align: left;
+    }
+
+    .message-text {
+        font-size: 0.98rem;
+        line-height: 1.85;
+    }
+
+    .message-empathy {
+        display: block;
+        margin-top: 24px;
+        padding: 10px 0;
+        font-size: 1.2rem;
+        line-height: 1.65;
+        text-align: center;
+    }
+
+    .message-sub {
+        margin-top: 16px;
+        font-size: 0.96rem;
+        line-height: 1.86;
+    }
+
+    .profile-wrapper {
+        gap: 30px;
+    }
+
+    .profile-catch {
+        margin-bottom: 22px;
+        font-size: 1.14rem;
+        line-height: 1.75;
+        text-align: left;
+    }
+
+    .story-list dt {
+        margin-top: 18px;
+        margin-bottom: 8px;
+        padding-left: 12px;
+        font-size: 1rem;
+        line-height: 1.55;
+    }
+
+    .story-list dd {
+        margin-bottom: 14px;
+        padding-left: 12px;
+        font-size: 0.94rem;
+        line-height: 1.78;
+    }
+
+    .benefit-card,
+    .program-card,
+    .voice-card,
+    .flow-step,
+    .assurance-card {
+        padding: 24px 20px;
+    }
+
+    .benefit-num {
+        margin-bottom: 16px;
+        font-size: 2.15rem;
+    }
+
+    .benefit-card h3,
+    .program-title,
+    .voice-title,
+    .step-title,
+    .assurance-card h3 {
+        font-size: 1.12rem;
+        line-height: 1.55;
+        letter-spacing: 0.03em;
+    }
+
+    .benefit-card h3 .text-sm,
+    .program-sub {
+        font-size: 0.94rem;
+    }
+
+    .benefit-card p,
+    .program-lead,
+    .program-desc,
+    .program-points li,
+    .voice-before,
+    .voice-after,
+    .step-desc,
+    .assurance-lead,
+    .assurance-card p,
+    .offer-subtitle,
+    .offer-note,
+    .a-text,
+    .contact-copy,
+    .contact-reassure {
+        font-size: 0.95rem;
+        line-height: 1.78;
+        letter-spacing: 0.015em;
+    }
+
+    .benefit-effect {
+        margin-top: 34px;
+        padding: 22px 18px;
+        font-size: 1.12rem;
+        line-height: 1.65;
+    }
+
+    .program-lead {
+        text-align: left;
+        margin-bottom: 34px;
+    }
+
+    .program-card {
+        gap: 0;
+    }
+
+    .program-head {
+        padding-bottom: 15px;
+        margin-bottom: 16px;
+    }
+
+    .program-desc {
+        margin-bottom: 16px;
+    }
+
+    .program-points li {
+        padding: 9px 0;
+    }
+
+    .program-hook {
+        margin-top: 34px;
+    }
+
+    .program-hook p {
+        margin-bottom: 22px;
+        font-size: 1.12rem;
+        line-height: 1.65;
+    }
+
+    .trust-badges {
+        gap: 22px;
+        margin-bottom: 28px;
+        padding: 8px 0 12px;
+    }
+
+    .trust-badge .badge-number {
+        font-size: 2rem;
+    }
+
+    .voice-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .voice-before,
+    .voice-after {
+        padding: 14px 15px;
+    }
+
+    .flow-step {
+        max-width: none;
+    }
+
+    .flow-notes {
+        padding: 20px 18px;
+        text-align: left;
+    }
+
+    .flow-notes p {
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    .assurance-lead {
+        margin: -12px auto 30px;
+        text-align: left;
+        font-weight: 500;
+    }
+
+    .assurance-icon {
+        width: 54px;
+        height: 54px;
+        margin-bottom: 14px;
+        font-size: 1.55rem;
+    }
+
+    .offer-box {
+        padding: 40px 18px 30px;
+    }
+
+    .offer-limited-banner {
+        margin: -40px -18px 26px;
+        padding: 12px 14px;
+        font-size: 0.92rem;
+        letter-spacing: 0.04em;
+    }
+
+    .limited-text {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .limited-highlight {
+        padding: 3px 12px;
+        font-size: 0.95rem;
+    }
+
+    .offer-box h3 {
+        font-size: 1.24rem;
+        line-height: 1.55;
+    }
+
+    .offer-subtitle {
+        margin-bottom: 24px;
     }
 
     /* オファー詳細を縦に整列 */
@@ -1985,22 +2314,76 @@ h3 {
         margin: 0 auto;
     }
 
+    .offer-item .value {
+        font-size: 1.12rem;
+    }
+
+    .offer-item .price-free {
+        font-size: 1.72rem;
+    }
+
+    .question {
+        align-items: flex-start;
+        gap: 10px;
+        padding: 17px 16px;
+    }
+
+    .q-icon,
+    .a-icon {
+        width: 26px;
+        height: 26px;
+        font-size: 0.75rem;
+    }
+
+    .q-text {
+        font-size: 0.98rem;
+        line-height: 1.55;
+        letter-spacing: 0.02em;
+    }
+
+    .answer {
+        gap: 10px;
+        padding: 0 16px;
+    }
+
+    .qa-item.open .answer {
+        max-height: 520px;
+        padding: 0 16px 18px;
+    }
+
+    .contact-copy {
+        text-align: left;
+    }
+
+    .contact-reassure {
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
     /* CTAボタンの文字が詰まらないように */
     .btn-large {
-        padding: 20px 24px;
-        font-size: 1rem;
-    }
-
-    .hero-title {
-        font-size: 1.95rem;
-        line-height: 1.45;
-    }
-
-    .hero-benefit {
-        font-size: 1rem;
+        padding: 18px 20px;
+        font-size: 0.96rem;
+        line-height: 1.55;
+        letter-spacing: 0.02em;
     }
 
     .cta-support {
-        font-size: 0.78rem;
+        max-width: 20em;
+        margin: 10px auto 0;
+        font-size: 0.76rem;
+        line-height: 1.55;
+        font-weight: 600;
+    }
+
+    .floating-cta {
+        padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    }
+
+    .floating-cta .btn-primary {
+        padding: 13px 14px;
+        font-size: 0.82rem;
+        line-height: 1.45;
+        letter-spacing: 0.01em;
     }
 }
