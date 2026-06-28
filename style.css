@@ -239,7 +239,7 @@ h3 {
 
 .btn-large {
     width: 100%;
-    max-width: 480px;
+    max-width: 560px;
     padding: 24px 44px;
     font-size: 1.2rem;
 }
@@ -399,6 +399,15 @@ h3 {
 
 .hero-cta-wrapper {
     margin-top: 8px;
+}
+
+.cta-support {
+    margin-top: 12px;
+    color: var(--color-text-light);
+    font-size: 0.88rem;
+    font-weight: 700;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
 }
 
 .hero-image {
@@ -1618,9 +1627,9 @@ h3 {
 
 .floating-cta .btn-primary {
     width: 100%;
-    max-width: 380px;
-    padding: 18px 28px;
-    font-size: 1.02rem;
+    max-width: 430px;
+    padding: 16px 22px;
+    font-size: 0.92rem;
     border-radius: 60px;
 }
 
@@ -1713,7 +1722,7 @@ h3 {
     }
 
     .hero-title {
-        font-size: 4.4rem;
+        font-size: 3.4rem;
         line-height: 1.3;
     }
 
@@ -1979,6 +1988,19 @@ h3 {
     /* CTAボタンの文字が詰まらないように */
     .btn-large {
         padding: 20px 24px;
-        font-size: 1.08rem;
+        font-size: 1rem;
+    }
+
+    .hero-title {
+        font-size: 1.95rem;
+        line-height: 1.45;
+    }
+
+    .hero-benefit {
+        font-size: 1rem;
+    }
+
+    .cta-support {
+        font-size: 0.78rem;
     }
 }
