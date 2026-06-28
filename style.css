@@ -2002,6 +2002,42 @@ h3 {
         width: min(91%, 420px);
     }
 
+    .hero-content,
+    .message-box,
+    .profile-content,
+    .program-lead,
+    .program-card,
+    .flow-notes,
+    .assurance-lead,
+    .assurance-card p,
+    .contact-copy,
+    .contact-reassure {
+        text-align: center;
+    }
+
+    .message-text,
+    .message-sub,
+    .profile-catch,
+    .story-list dd,
+    .benefit-card p,
+    .program-lead,
+    .program-desc,
+    .voice-before p,
+    .voice-after p,
+    .step-desc,
+    .flow-notes p,
+    .assurance-lead,
+    .assurance-card p,
+    .offer-subtitle,
+    .offer-note,
+    .a-text,
+    .contact-copy,
+    .contact-reassure {
+        max-width: 25em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .hero {
         margin-top: 58px;
         min-height: auto;
@@ -2068,8 +2104,13 @@ h3 {
         margin-bottom: 32px !important;
     }
 
+    .checklist {
+        text-align: center !important;
+    }
+
     .checklist li {
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
         gap: 10px;
         margin-bottom: 12px;
         padding-bottom: 12px;
@@ -2086,7 +2127,6 @@ h3 {
 
     .message-box {
         margin-top: 34px;
-        text-align: left;
     }
 
     .message-text {
@@ -2117,20 +2157,20 @@ h3 {
         margin-bottom: 22px;
         font-size: 1.14rem;
         line-height: 1.75;
-        text-align: left;
     }
 
     .story-list dt {
+        display: inline-block;
         margin-top: 18px;
         margin-bottom: 8px;
-        padding-left: 12px;
+        padding: 0 0 0 12px;
         font-size: 1rem;
         line-height: 1.55;
     }
 
     .story-list dd {
         margin-bottom: 14px;
-        padding-left: 12px;
+        padding-left: 0;
         font-size: 0.94rem;
         line-height: 1.78;
     }
@@ -2190,7 +2230,6 @@ h3 {
     }
 
     .program-lead {
-        text-align: left;
         margin-bottom: 34px;
     }
 
@@ -2209,6 +2248,7 @@ h3 {
 
     .program-points li {
         padding: 9px 0;
+        text-align: center;
     }
 
     .program-hook {
@@ -2232,9 +2272,10 @@ h3 {
     }
 
     .voice-header {
-        align-items: flex-start;
+        align-items: center;
         flex-direction: column;
         gap: 8px;
+        text-align: center;
     }
 
     .voice-before,
@@ -2248,7 +2289,6 @@ h3 {
 
     .flow-notes {
         padding: 20px 18px;
-        text-align: left;
     }
 
     .flow-notes p {
@@ -2258,7 +2298,6 @@ h3 {
 
     .assurance-lead {
         margin: -12px auto 30px;
-        text-align: left;
         font-weight: 500;
     }
 
@@ -2351,13 +2390,8 @@ h3 {
         padding: 0 16px 18px;
     }
 
-    .contact-copy {
-        text-align: left;
-    }
-
     .contact-reassure {
         margin-bottom: 30px;
-        text-align: left;
     }
 
     /* CTAボタンの文字が詰まらないように */
