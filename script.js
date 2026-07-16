@@ -122,4 +122,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (qaItems.length > 0) {
         qaItems[0].classList.add('open');
     }
+
+    document.querySelectorAll('[data-cta-location]').forEach(cta => {
+        cta.addEventListener('click', () => {
+            const detail = { location: cta.dataset.ctaLocation };
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({ event: 'line_cta_click', ...detail });
+            window.dispatchEvent(new CustomEvent('lineCtaClick', { detail }));
+        });
+    });
 });
