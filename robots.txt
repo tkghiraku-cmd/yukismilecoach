@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yukismilecoach.netlify.app/sitemap.xml
