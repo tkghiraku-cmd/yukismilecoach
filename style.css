@@ -399,6 +399,8 @@ h3 {
 }
 
 .hero-content {
+    /* 縦積みになるスマホ・タブレットでは中央揃え。
+       PC（992px以上）では画像との横並びになるため左揃えへ切り替える */
     text-align: center;
     padding: 40px 20px 30px;
     z-index: 2;
@@ -464,6 +466,11 @@ h3 {
     line-height: 2;
     margin-bottom: 28px;
     font-weight: 600;
+    /* 数行に渡る本文は行頭を揃える（キャッチ・バッジ・CTAは中央揃えのまま）。
+       縦積み時は読みやすい幅のブロックを中央に置く */
+    text-align: left;
+    max-width: 34em;
+    margin-inline: auto;
 }
 
 /* Hero authority badges */
@@ -806,6 +813,8 @@ h3 {
 }
 
 .message-box {
+    /* 中央揃えは inline-block の .message-empathy を中央に置くためのもの。
+       本文（.message-text / .message-sub）は個別に左揃えを指定している */
     text-align: center;
     margin-top: var(--spacing-lg);
 }
@@ -814,6 +823,9 @@ h3 {
     font-size: 1.1rem;
     color: var(--color-text-light);
     line-height: 2.1;
+    text-align: left;
+    max-width: 34em;
+    margin-inline: auto;
 }
 
 .message-empathy {
@@ -846,7 +858,10 @@ h3 {
     font-size: 1.05rem;
     color: var(--color-text-light);
     line-height: 2;
-    text-wrap: balance;
+    text-wrap: pretty;
+    text-align: left;
+    max-width: 34em;
+    margin-inline: auto;
 }
 
 /* =============================================
@@ -968,7 +983,7 @@ h3 {
 
 .why-free-sign {
     margin-top: 22px;
-    text-align: right;
+    text-align: left;
     font-family: var(--font-heading);
     font-size: 1rem;
     font-weight: 700;
@@ -1074,13 +1089,13 @@ h3 {
    PROGRAM (ワークプログラム内容)
    ============================================= */
 .program-lead {
-    text-align: center;
+    text-align: left;
     max-width: 720px;
     margin: 0 auto var(--spacing-lg);
     font-size: 1.1rem;
     line-height: 2;
     color: var(--color-text-main);
-    text-wrap: balance;
+    text-wrap: pretty;
 }
 
 .program-lead strong {
@@ -1113,6 +1128,8 @@ h3 {
 }
 
 .program-head {
+    /* カードの見出し部（ラベル＋タイトル）は中央揃えで揃える */
+    text-align: center;
     border-bottom: 1px dashed rgba(192, 155, 102, 0.35);
     padding-bottom: 18px;
     margin-bottom: 20px;
@@ -1314,6 +1331,7 @@ h3 {
 }
 
 .voice-title {
+    text-align: center;
     font-size: 1.2rem;
     color: var(--color-heading);
     margin-bottom: 18px;
@@ -1474,7 +1492,9 @@ h3 {
     font-size: 1.15rem;
     color: var(--color-text-light);
     line-height: 1.9;
-    text-wrap: balance;
+    text-wrap: pretty;
+    /* カード内の本文は左揃え（STEP番号・アイコン・見出しは中央のまま） */
+    text-align: left;
 }
 
 .flow-connector {
@@ -1492,7 +1512,11 @@ h3 {
 }
 
 .flow-notes {
-    text-align: center;
+    /* 項目を1カラムに積み、グループ全体は中央に置いたまま
+       各行の行頭（✅）を左で揃える */
+    display: grid;
+    justify-content: center;
+    text-align: left;
     margin-top: var(--spacing-md);
     background: white;
     padding: 24px;
@@ -1873,7 +1897,10 @@ h3 {
     color: var(--color-text-light);
     margin-bottom: 14px;
     line-height: 2.1;
-    text-wrap: balance;
+    text-wrap: pretty;
+    text-align: left;
+    max-width: 34em;
+    margin-inline: auto;
 }
 
 .contact-reassure {
@@ -1918,14 +1945,14 @@ h3 {
 }
 
 .assurance-lead {
-    text-align: center;
+    text-align: left;
     font-size: 1.1rem;
     color: var(--color-text-main);
     line-height: 2;
     max-width: 760px;
     margin: calc(-1 * var(--spacing-md)) auto var(--spacing-md);
     font-weight: 600;
-    text-wrap: balance;
+    text-wrap: pretty;
 }
 
 .assurance-lead strong {
@@ -2118,6 +2145,11 @@ h3 {
 
     .hero-badges {
         justify-content: flex-start;
+    }
+
+    /* PCでは見出しと行頭を揃えるため、ブロックを左端に寄せる */
+    .hero-benefit {
+        margin-inline: 0;
     }
 
     .hero-cta-wrapper {
@@ -2457,19 +2489,7 @@ h3 {
         width: min(91%, 420px);
     }
 
-    .hero-content,
-    .message-box,
-    .profile-content,
-    .program-lead,
-    .program-card,
-    .flow-notes,
-    .assurance-lead,
-    .assurance-card p,
-    .contact-copy,
-    .contact-reassure {
-        text-align: center;
-    }
-
+    .hero-benefit,
     .message-text,
     .message-sub,
     .profile-catch,
@@ -2480,7 +2500,6 @@ h3 {
     .voice-before p,
     .voice-after p,
     .step-desc,
-    .flow-notes p,
     .assurance-lead,
     .assurance-card p,
     .offer-subtitle,
@@ -2704,7 +2723,6 @@ h3 {
 
     .program-points li {
         padding: 9px 0;
-        text-align: center;
     }
 
     .program-hook {
@@ -3047,16 +3065,3 @@ h3 {
     }
 }
 
-/* =============================================
-   スマホ: 本文の行頭揃え
-   ============================================= */
-@media (max-width: 600px) {
-
-    /* カード・囲みの中の本文は中央揃えだと行頭がずれて読みにくいため、
-       PC表示と同じ左揃えに統一する */
-    .story-list dd,
-    .program-desc,
-    .assurance-card p {
-        text-align: left;
-    }
-}
